@@ -11,8 +11,7 @@ export function HomePage() {
       <div>
         <h1 className="text-3xl font-bold">Welcome to Vite + React Template</h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">
-          A modern template with React Router, Redux Toolkit, and Tailwind CSS
-          v4
+          A modern template with React Router, Redux Toolkit, and Tailwind CSS v4
         </p>
       </div>
 
@@ -34,9 +33,7 @@ export function HomePage() {
             Decrement
           </button>
 
-          <span className="min-w-16 text-center text-2xl font-mono font-semibold">
-            {count}
-          </span>
+          <span className="min-w-16 text-center font-mono text-2xl font-semibold">{count}</span>
 
           <button
             className="rounded border px-4 py-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-900"
@@ -70,9 +67,7 @@ export function HomePage() {
           >
             Visit non-existent route →
           </Link>
-          <p className="mt-1 text-xs text-gray-500">
-            (This will show the 404 page)
-          </p>
+          <p className="mt-1 text-xs text-gray-500">(This will show the 404 page)</p>
         </div>
       </div>
 
@@ -83,8 +78,7 @@ export function HomePage() {
           <li className="flex items-start gap-2">
             <span className="text-green-600 dark:text-green-400">✓</span>
             <span>
-              <strong>Theme Toggle:</strong> Dark/light mode in navbar
-              (persisted to localStorage)
+              <strong>Theme Toggle:</strong> Dark/light mode in navbar (persisted to localStorage)
             </span>
           </li>
           <li className="flex items-start gap-2">
@@ -101,17 +95,14 @@ export function HomePage() {
             <span className="text-green-600 dark:text-green-400">✓</span>
             <span>
               <strong>Path Aliases:</strong> Use{" "}
-              <code className="rounded bg-gray-100 px-1 py-0.5 text-xs dark:bg-gray-800">
-                @/
-              </code>{" "}
+              <code className="rounded bg-gray-100 px-1 py-0.5 text-xs dark:bg-gray-800">@/</code>{" "}
               instead of relative imports
             </span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-green-600 dark:text-green-400">✓</span>
             <span>
-              <strong>Feature-based Structure:</strong> Organize code by
-              features in{" "}
+              <strong>Feature-based Structure:</strong> Organize code by features in{" "}
               <code className="rounded bg-gray-100 px-1 py-0.5 text-xs dark:bg-gray-800">
                 src/features/
               </code>

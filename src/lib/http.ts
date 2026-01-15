@@ -32,10 +32,7 @@ function baseUrl() {
   return import.meta.env.VITE_API_URL ?? "";
 }
 
-async function request<T>(
-  path: string,
-  options: RequestOptions = {},
-): Promise<T> {
+async function request<T>(path: string, options: RequestOptions = {}): Promise<T> {
   const url = path.startsWith("http") ? path : `${baseUrl()}${path}`;
 
   const res = await fetch(url, {
@@ -49,16 +46,13 @@ async function request<T>(
   });
 
   const contentType = res.headers.get("content-type") ?? "";
-  const data = contentType.includes("application/json")
-    ? await res.json()
-    : await res.text();
+  const data = contentType.includes("application/json") ? await res.json() : await res.text();
 
   if (!res.ok) {
     const message =
       typeof data === "string"
         ? data || "Request failed"
-        : (data as Record<string, unknown>)?.message?.toString() ||
-          "Request failed";
+        : (data as Record<string, unknown>)?.message?.toString() || "Request failed";
     throw new HttpError(message, res.status, data);
   }
 

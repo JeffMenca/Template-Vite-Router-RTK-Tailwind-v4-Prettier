@@ -90,9 +90,7 @@ function MyComponent() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-      Toggle Theme
-    </button>
+    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>Toggle Theme</button>
   );
 }
 ```
