@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Enable dark mode variant - Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colors theme example*/
+  --color-custom-main: #000;
+  --color-custom-secondary: #fff;
+}
